@@ -2,7 +2,12 @@
 // Run the code and examine the output. 
 
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
+
+console.log("false")
+
 // Is the program behaving as expected?
+
+console.log("No")
 
 let launchReady = false;
 let fuelLevel = 17000;
@@ -35,3 +40,5 @@ console.log("launchReady = ", launchReady);
 // } else {
 //    console.log('Launch scrubbed.');
 // }
+
+console.log(launchReady);

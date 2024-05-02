@@ -1,6 +1,8 @@
 // Run this sample code as-is and examine the output. 
 // Should the shuttle have launched? 
+console.log("No")
 // Did it?
+console.log("Yes. Eek!")
 // Do not worry about fixing the code yet, we will do that in the next series of exercises.
 
 let launchReady = false;

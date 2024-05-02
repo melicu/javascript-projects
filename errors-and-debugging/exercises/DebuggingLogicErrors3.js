@@ -3,7 +3,12 @@
 // Add another console.log(launchReady) after this block and run the program.
 
 // Given the values for crewStatus and computerStatus, should launchReady be true or false after the check?  
+
+console.log("true")
+
 // Is the program behaving as expected?
+
+console.log("Yes")
 
 let launchReady = false;
 // let fuelLevel = 17000;
@@ -32,3 +37,5 @@ if (crewStatus && computerStatus === 'green'){
 // } else {
 //    console.log('Launch scrubbed.');
 // }
+
+console.log(launchReady);
