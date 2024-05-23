@@ -69,3 +69,19 @@ function makeIsoscelesTriangle(height) {
 }
 
 // console.log(makeIsoscelesTriangle(5));
+
+function makeDiamond(height) {
+    let diamond = "";
+    let triangle = "";
+    let reverseTriangle = [];
+    for (let index = 0; index < height; index++) {
+        triangle += '\n' + makeSpaceLine(height - index - 1, 2 * index + 1);
+        reverseTriangle = triangle.split('').reverse().join('');
+    }
+    diamond += triangle + reverseTriangle;
+
+    return (diamond);
+}
+
+console.log(makeDiamond(5));
+
