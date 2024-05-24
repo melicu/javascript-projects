@@ -63,11 +63,3 @@ console.log(reverseArray(arrayTest3));
 // 4. If only one argument is passed to the function, then the shape is a square. Modify your code to deal with this case.
 // 5. Use a template literal to print, “The area is ____ cm^2.”
 
-
-
-// function reverseCharacters(stringToReverse) {
-//     if (typeofstringtoreverse === "string") {}
-//     if type of string to reverse === "number) {
-//         stringtoREverse = string(stringtoreverse);
-//         return Number(stringtoreverse.split(''"
-// }
