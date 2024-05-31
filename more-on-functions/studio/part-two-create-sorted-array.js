@@ -1,7 +1,7 @@
-function findMinValue(arr){
+function findMinValue(arr) {
   let min = arr[0];
-  for (i = 0; i < arr.length; i++){
-    if (arr[i] < min){
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
       min = arr[i];
     }
   }
@@ -27,3 +27,31 @@ function findMinValue(arr){
 let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+function sortNumArray(arr) {
+  let sortedArr = [];
+  let length = arr.length;
+  for (let index = 0; index < length; index++) {
+    let value = findMinValue(arr);
+    sortedArr.push(value);
+    arr.splice(arr.indexOf(value), 1);
+  }
+  return sortedArr;
+}
+
+function sortNumArrayWhile(arr) {
+  let sortedArr = [];
+  while (arr.length !== 0) {
+    let length = arr.length;
+    for (let index = 0; index < length; index++) {
+      let value = findMinValue(arr);
+      sortedArr.push(value);
+      arr.splice(arr.indexOf(value), 1);
+    }
+  }
+  return sortedArr;
+}
+
+console.log(sortNumArray(nums1));
+console.log(sortNumArray(nums2));
+console.log(sortNumArrayWhile(nums3));
