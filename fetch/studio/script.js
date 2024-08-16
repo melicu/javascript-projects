@@ -2,6 +2,8 @@
 window.addEventListener("load", () => {
     fetch("https://handlers.education.launchcode.org/static/astronauts.json").then((response) => {
         response.json().then((json) => {
+            const numAstronauts = document.getElementById("total");
+            numAstronauts.innerHTML = `There are ${json.length} astronauts on this list:`
             json.sort((a, b) => b.hoursInSpace - a.hoursInSpace);
             const container = document.getElementById("container");
             for (let index = 0; index < json.length; index++) {
